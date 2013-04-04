@@ -3,8 +3,11 @@ About
 
 A collection of "Hello World" programs for various X11 Widget toolkits.
 
-
-client_xaw - Xaw (X Athena Widgets and Xt Intrinsics)0
+client_xaw - Xaw (X Athena Widgets and Xt Intrinsics)
+client_forms - XForms library
+client_xv - XView / OPEN LOOK library
+client_w - WINGs / WindowMaker library
+client_glfw - GL Framework library
 
 Prerequisites
 =============
@@ -26,6 +29,9 @@ client_w:
 	debian/ubuntu: apt-get install libwings-dev
 	arch: apt-get install windowmaker
 
+client_glfw:
+	debian/ubuntu: apt-get install libglfw-dev
+	arch: TBD
 
 Building
 ========

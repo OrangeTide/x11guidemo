@@ -21,3 +21,8 @@ client_xv : client_xv.c
 client_xv : LDLIBS = -lxview
 clean :: ; $(RM) client_xv
 all :: client_xv
+
+client_glfw : client_glfw.c
+client_glfw : LDLIBS = -lglfw
+clean :: ; $(RM) client_glfw
+all :: client_glfw
