@@ -1,0 +1,47 @@
+About
+=====
+
+A collection of "Hello World" programs for various X11 Widget toolkits.
+
+
+client_xaw - Xaw (X Athena Widgets and Xt Intrinsics)0
+
+Prerequisites
+=============
+* NOTE: don't install packges unless the build fails.
+
+client_xaw:
+	debian/ubuntu: apt-get install libxt-dev libxaw7-dev
+	arch: pacman -S libxaw
+
+client_forms:
+	debian/ubuntu: apt-get install libforms-dev
+	arch: http://aur.archlinux.org/packages/xforms/
+
+client_xv:
+	debian/ubuntu: apt-get install xviewg-dev xview-examples xview-clients
+	arch: N/A
+
+client_w:
+	debian/ubuntu: apt-get install libwings-dev
+	arch: apt-get install windowmaker
+
+
+Building
+========
+
+make all
+
+
+BUGS
+====
+
+* client_xv crashes, This is likely due to due to known issue
+  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=320155
+  Error output:
+System warning: No such file or directory, call to alloc function returned NULL pointer
+
+* client_w crashes, WINGs seems extremely broken on Ubuntu.
+  Error output:
+client_w: /build/buildd/wmaker-0.92.0/WINGs/proplist.c:916: WMCreatePLString: Assertion `str!=((void *)0)' failed.
+
